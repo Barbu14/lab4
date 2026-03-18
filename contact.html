@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <a href="#main-content">Skip to main content</a>
+    <nav aria-label="Main Navigation"> 
+        <a href="index.html">Homepage</a>
+    </nav>
+
+    <h1>Contact Form</h1>
+
+    <main id="main-content">
+        <section>
+            <form aria-label="Contact Form" action="#">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" pattern="[0-9\s\-+]+" id="phone">
+                </fieldset>
+                <fieldset>
+                    <legend>Your message</legend>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" aria-describedby="subject-hint" required>
+                    <p id="subject-hint">e.g. Lab 2, schedule, grading</p>
+                    <label for="message">Message</label>
+                    <textarea required id="message"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label for="hear-course">Course</label>
+                    <input type="radio" id="hear-course" name="hear" required>
+                    <label for="hear-search">Search</label>
+                    <input type="radio" id="hear-search" name="hear" required>
+                    <label for="hear-other">Other</label>
+                    <input type="radio" id="hear-other" name="hear" required>
+                </fieldset>
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+        <table border="1">
+            <thead>
+            <caption>Messages Received</caption>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Date</th>
+                <th>Priority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td><a href="mailto:alice@gmail.com">alice@gmail.com</a></td>
+            <td>Hey! Just finished Lab 1!</td>
+            <td>01.01.2026</td>
+            <td><input type="checkbox" checked></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td rowspan="4">Bob</td>
+                <td rowspan="4"><a href="mailto:bob@e-uvt.ro">bob@e-uvt.ro</a></td>
+                <td>Hey, how's it going?</td>
+                <td>09.02.2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Do you know the deadline for lab 3?</td>
+                <td>09.02.2026</td>
+                <td><input type="checkbox" checked></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Can someone share the example solution for Lab 2?</td>
+                <td>21.02.2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </tbody>
+    </table>
+        
+    </main>
+    <footer>Bizoi Mario Alex, Elemente de Web Design, Sem II</footer>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+1.
+paragraph a - color, font size, font family, line height, padding.all come from element selector.
+
+paragraph b - color, font-size, background-color, padding, border-left, font family come from id selector.
+            - line-height from element selector
+
+paragraph c - color, font size/style/family, text-transform, letter spacing, border, padding, background come from class selector.
+            - line-height come from element selector.
+
+paragraph d - color, background-color, border, font-size, font-style, letter-spacing come from class and id selector.
+            - text-transform, border, padding, font family comes from id selector.
+            - border-left comes from class selector.
+            - line-height comes from element
+
+2.paragraph d will get the color from the class and id selector #warning.info, because it has both the class and the id.
+The font-family property will be from the id selector because class and id selector doesn't have this property and the id selector is the next with biggest proiority.
+
+3.the title will have the color inside the style tag that is in the html file, because it has priority.

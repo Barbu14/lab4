@@ -1,0 +1,21 @@
+        .card {
+            text-align: left;
+            border-spacing: 0;
+            border-collapse: separate;
+            border-radius: 15px;
+            overflow: hidden;  
+            background-color: rgb(164, 34, 251);
+            padding-left: 6px;
+            padding-top: 6px;
+               
+        }
+
+        h1{
+            background-color: rgb(49, 78, 240);
+            color:white;
+            padding:4px;
+        }
+        h3{
+            color: rgb(5, 5, 5);
+            padding:4px;
+        }
